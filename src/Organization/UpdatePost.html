@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/svg+xml" href="/vite.svg">
+	<title>Kindle</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/media-queries.css">
+	<link rel="stylesheet" href="./notifyButton.css">
+
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="../assets/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar" style="background-color: #212121;">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3><a href="OrganizationHome.html">Kindle</a></h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li>
+					<a class="scroll-link" href="OrganizationHome.html"><i class="fas fa-home"></i> Home</a>
+				</li>
+                <li>
+					<a class="scroll-link" href="NewPost.html"><i class="fas fa-pencil-alt"></i> New Post</a>
+				</li>
+                <li>
+					<a class="scroll-link" href="MyPosts.html"><i class="fas fa-book-open"></i> My Posts</a>
+				</li>
+                <li>
+					<a class="scroll-link" href="FulfilledDonations.html"><i class="fas fa-hand-holding-heart"></i> Fulfilled Donations</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="settings.html"><i class="fas fa-cog"></i>Account Settings</a>
+				</li>
+			</ul>
+
+			
+				<a class="btn btn-primary btn-customized-3" href="../HomePage.html" role="button">
+					<i class="fas fa-sign-out-alt"></i> Log out 
+				</a>
+			
+			
+			<!-- <div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+			</div> -->
+
+		</nav>
+		<!-- End sidebar -->
+
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<!-- open sidebar menu -->
+			<a class="open-menu" href="#" role="button">
+				<button class="btnMenu" style="background-color: #212121;">
+					<span class="icon">
+						<svg viewBox="0 0 175 80" width="40" height="40">
+							<rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+							<rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+							<rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+						</svg>
+					</span>
+					<span class="text">Menu</span>
+				</button>
+			</a>
+
+			<!-- Section 1 -->
+			<div class="section-1-container section-container" id="section-1">
+				<div class="container">
+					<div class="row">
+                        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2" >
+							<h1 class="wow fadeIn" style="color:#FCFAF0;"></h1>
+							<div class="description wow fadeInLeft">
+								<h3>
+									<p style="color:#FCFAF0;"></p>
+								</h3>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Section 6 -->
+			<div class="section-7-container section-container" id="section-7">
+				<div class="container">
+					<div class="row">
+						<div class="col section-7 section-description wow fadeIn">
+                            <h2>Update Donation Post</h2>
+                            <div class="divider-1 wow fadeInUp"><span></span></div>
+                            <p>Update your existing donation post, modify item category and details as needed. Submit the updated post for approval.</p>
+                        </div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 section-6-box wow fadeInUp">
+							<h3>Update Post</h3>
+							<div class="section-6-form">
+								<form role="form" id="donation-form" method="post">
+									<div class="form-group">
+										<label class="sr-only" for="item-category">Item Category</label>
+                                        <select class="item-category form-control" id="item-category" name="item-category" required>
+                                            <option value="" selected disabled>-- Choose an item category --</option>
+                                            <option value="clothes">Clothes</option>
+                                            <option value="toys">Toys</option>
+                                            <option value="food">Food</option>
+                                            <option value="medical-supplies">Medical Supplies</option>
+                                            <option value="school-supplies">School Supplies</option>
+                                            <option value="blood-donations">Blood Donations</option>
+                                        </select>
+									</div>
+									
+									<div class="form-group">
+										<label class="sr-only" for="item-details">Details</label>
+										<textarea name="Details" placeholder="Details..."
+											class="item-details form-control" id="item-details" required></textarea>
+									</div>
+                                    <!-- Add an element to display the submission message -->
+                                    <div id="submission-message" class="alert alert-success d-none" role="alert">
+                                        Post Updated Successfully
+                                    </div>
+                                    <!-- Modify the submit button to trigger the message -->
+                                    <button type="submit" class="btn btn-primary btn-customized" id="submit-post-btn">
+                                        <i class="fas fa-paper-plane"></i> Update Post
+                                    </button>
+								</form>
+                                <script>
+                                    document.getElementById('submit-post-btn').addEventListener('click', function(event) {
+                                        // Check if the form is valid
+                                        if (document.getElementById('donation-form').checkValidity()) {
+                                            // Prevent the default form submission behavior
+                                            event.preventDefault();
+                                            // Show the submission message if the form is valid
+                                            Swal.fire({
+											title: "Good job!",
+											text: "Post Updated Successfully!",
+											icon: "success",
+											showConfirmButton: false,
+											timer:2500
+											});	
+
+										setTimeout(function() {
+										window.location.href = "./MyPosts.html";
+									}, 2500);
+                                        }
+                                    });
+                                </script>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="button" id="notificationsButton">
+				<svg class="bell" viewBox="0 0 448 512">
+				  <path
+					d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+				  ></path>
+				</svg>
+				Notifications
+				<div class="arrow">›</div>
+				<div class="dot"></div>
+			  </button>
+
+            
+
+			<!-- Footer -->
+			<footer class="footer-container">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col">
+							&copy; This website perserves your personal information.
+						</div>
+
+					</div>
+				</div>
+
+			</footer>
+
+		</div>
+		<!-- End content -->
+
+	</div>
+	<!-- End wrapper -->
+
+	<!-- Javascript -->
+	<script src="../assets/js/jquery-3.3.1.min.js"></script>
+	<script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="../assets/js/jquery.backstretch.min.js"></script>
+	<script src="../assets/js/wow.min.js"></script>
+	<script src="../assets/js/jquery.waypoints.min.js"></script>
+	<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../assets/js/scripts.js"></script>
+	<script src="./sideBarButtons.js"></script>
+	<script src="./notifyButton.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>	 
+	<script src="sweetalert2.all.min.js"></script> 
+
+
+</body>
+
+</html>

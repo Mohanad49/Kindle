@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/svg+xml" href="/vite.svg">
+	<title>Kindle</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/media-queries.css">
+    <link rel="stylesheet" href="./notifyButton.css">
+
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="../assets/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar" style="background-color: #212121;">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3><a href="OrganizationHome.html">Kindle</a></h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li>
+					<a class="scroll-link" href="OrganizationHome.html"><i class="fas fa-home"></i> Home</a>
+				</li>
+                <li>
+					<a class="scroll-link" href="NewPost.html"><i class="fas fa-pencil-alt"></i> New Post</a>
+				</li>
+                <li class="active">
+					<a class="scroll-link active" href="MyPosts.html"><i class="fas fa-book-open"></i> My Posts</a>
+				</li>
+                <li>
+					<a class="scroll-link" href="FulfilledDonations.html"><i class="fas fa-hand-holding-heart"></i> Fulfilled Donations</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="settings.html"><i class="fas fa-cog"></i>Account Settings</a>
+				</li>
+			</ul>
+
+			
+				<a class="btn btn-primary btn-customized-3" href="../HomePage.html" role="button">
+					<i class="fas fa-sign-out-alt"></i> Log out 
+				</a>
+			
+			
+			<!-- <div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+			</div> -->
+
+		</nav>
+		<!-- End sidebar -->
+
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<!-- open sidebar menu -->
+			<a class="open-menu" href="#" role="button">
+				<button class="btnMenu" style="background-color: #212121;">
+					<span class="icon">
+						<svg viewBox="0 0 175 80" width="40" height="40">
+							<rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+							<rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+							<rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+						</svg>
+					</span>
+					<span class="text">Menu</span>
+				</button>
+			</a>
+			
+			<!-- Section for viewing details of fulfilled donation posts -->
+<div class="section-7-container section-container" id="section-7">
+    <div class="container">
+        <div class="row">
+            <div class="col section-7 section-description wow fadeIn">
+                <h2>Donation Posts</h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+                <p">Access your organization's donation posts section to view details of donations made by your organization, and manage them as needed.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Display details of fulfilled donation posts here -->
+            <!-- For example, you can use a table to display the list of posts -->
+            <div class="col-md-12 section-7-box wow fadeInUp">
+                <h3>Donation Posts</h3>
+                <div class="section-7-content">
+                    <!-- Your content here -->
+                    <!-- Sample table structure -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="padding-left: 80px;">Organization Name</th>
+                                <th style="padding-left: 80px;">Donation Category</th>
+                                <th style="padding-left: 80px;">Donation Details</th>
+                                <th style="padding-left: 88px;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example donation posts -->
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Clothing</td>
+                                <td>T-shirts, jeans</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Medical Supplies</td>
+                                <td>Bandages, syringes</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>School Supplies</td>
+                                <td>Books, pencils, notebooks</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Food</td>
+                                <td>Canned goods, rice, pasta</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Hygiene Products</td>
+                                <td>Soap, toothpaste, shampoo</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Bedding</td>
+                                <td>Pillows, blankets</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Electronics</td>
+                                <td>Laptops, tablets</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hope Harbor</td>
+                                <td>Shoes</td>
+                                <td>Sneakers, boots</td>
+                                <td>
+                                    <!-- Buttons for actions -->
+                                    <a href="UpdatePost.html" class="btn btn-warning">Edit <i class="fas fa-pencil-alt" style="margin-left: 5px;"></i></a>
+                                    <button class="btn btn-danger">Delete <i class="fas fa-trash-alt" style="margin-left: 5px;"></i></button>
+                                </td>
+                            </tr>                            
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                    <div id="no-posts-message" class="alert alert-info d-none" role="alert" style="font-weight: bold; color: #333;">
+                        No current posts
+                    </div>
+                    <script>
+                        // Get all delete buttons
+                        const deleteButtons = document.querySelectorAll('.btn-danger');
+
+                        // Attach click event listener to each delete button
+                        deleteButtons.forEach(button => {
+                            button.addEventListener('click', function() {
+                                // Get the parent row of the button
+                                const row = this.closest('tr');
+                            
+                                    Swal.fire({
+                                        title: "Are you sure?",
+                                        text: "You won't be able to revert this!",
+                                        icon: "warning",
+                                        showCancelButton: true,
+                                        confirmButtonColor: "#3085d6",
+                                        cancelButtonColor: "#d33",
+                                        confirmButtonText: "Yes, delete it!"
+                                        }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            Swal.fire({
+                                            title: "Deleted!",
+                                            showConfirmButton: false,
+                                            text: "Donation post has been deleted.",
+                                            icon: "success",
+                                            timer: 1500
+                                            });
+                                            // Apply CSS transition to fade out the row gradually
+                                            row.style.transition = 'opacity 0.5s ease';
+                                            row.style.opacity = '0'; // Set opacity to 0
+                                            setTimeout(function() {
+                                                row.remove();
+                                                if (document.querySelectorAll('tbody tr').length === 0) {
+                                                document.getElementById('no-posts-message').classList.remove('d-none');
+                                            }
+                                            },1000);
+                                        }
+                                        });
+                                    
+                                    
+                            
+                            });
+                        });
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="button" id="notificationsButton">
+    <svg class="bell" viewBox="0 0 448 512">
+      <path
+        d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+      ></path>
+    </svg>
+    Notifications
+    <div class="arrow">›</div>
+    <div class="dot"></div>
+  </button>
+            
+
+			<!-- Footer -->
+			<footer class="footer-container">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col">
+							&copy; This website perserves your personal information.
+						</div>
+
+					</div>
+				</div>
+
+			</footer>
+
+		</div>
+		<!-- End content -->
+
+	</div>
+	<!-- End wrapper -->
+
+	<!-- Javascript -->
+	<script src="../assets/js/jquery-3.3.1.min.js"></script>
+	<script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="../assets/js/jquery.backstretch.min.js"></script>
+	<script src="../assets/js/wow.min.js"></script>
+	<script src="../assets/js/jquery.waypoints.min.js"></script>
+	<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../assets/js/scripts.js"></script>
+    <script src="./sideBarButtons.js"></script>
+    <script src="./notifyButton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>	 
+	<script src="sweetalert2.all.min.js"></script> 
+
+</body>
+
+<style>
+    /* CSS for the table */
+    .table {
+    color: #333; /* Text color */
+    background-color: #f8f9fa; /* Background color */
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Take up full width of container */
+}
+
+/* CSS for table headers */
+.table th {
+    background-color: #212121; /* Header background color */
+    color: #fff; /* Header text color */
+    font-weight: bold; /* Bold font weight */
+    padding: 10px; /* Padding around header content */
+    text-align: left; /* Align text to the left */
+}
+
+/* CSS for table rows */
+.table td {
+    padding: 10px; /* Padding around cell content */
+    border-bottom: 1px solid #ddd; /* Bottom border for each row */
+}
+
+/* CSS for alternating row colors */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+/* CSS for hover effect on rows */
+.table tbody tr:hover {
+    background-color: #e9ecef; /* Hovered row background color */
+}
+
+/* Add styling for active menu item */
+.menu-elements .active {
+	background: rgba(255, 255, 255, 0.31);
+}
+
+.menu-elements .active a {
+    color: #555; 
+}
+
+.section-container-image-bg {
+    background-image: url('./assets/img/backgrounds/1.jpg'); /* Path to your transparent background image */
+    background-size: cover; /* Cover the entire container with the background image */
+    padding: 20px; /* Add padding for better readability */
+}
+
+</style>
+
+
+</html>
