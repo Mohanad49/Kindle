@@ -58,9 +58,21 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 	
 	/* logo */
-    .sidebar .logo a {
-    	background-image: url(../img/logo.png) !important; background-repeat: no-repeat !important; background-size: 172px 34px !important;
-    }
+    .sidebar .logo {
+		padding: 10px 35px;
+		border-bottom: 1px solid #444;
+		transition: all .3s;
+	}
+	
+	.sidebar .logo a {
+		display: inline-block;
+		width: 250px;
+		height: 175px;
+		background: url(../img/logo.png) left top no-repeat;
+		border: 0;
+		text-indent: -999999px;
+		background-size: 57%; 
+	}
     
     .sidebar.light .logo a {
     	background-image: url(../img/logo.png) !important;
